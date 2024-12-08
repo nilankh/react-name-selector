@@ -40,7 +40,7 @@ function App() {
   const handleMaybe = () => {
     setCurrentName(remainingNames[0])
     setMaybeNames([...maybeNames, currentName]);
-    setRemainingNames(remainingNames.slice(1));
+    setRemainingNames([...remainingNames.slice(1), currentName]);
   };
 
   return (
